@@ -1,0 +1,59 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .formGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            font-family: Raleway;
+            color: #575757;
+            gap: 10px;
+            .loginEmail{
+                display: flex;
+                flex-direction: column;
+                padding: 0px 20px 0px 20px;
+                
+                input{
+                    height: 2rem;
+                    border-radius: 5px;
+                }
+            }
+            .loginPassword{
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+                padding: 0px 20px 0px 20px;
+                input{
+                    height: 2rem;
+                    border-radius: 5px;
+                }
+
+        }
+    }
+
+    }
+    .buttonLogIn_signUp{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        ion-button{
+            --background:#1885FC
+            
+        }
+        label{
+            font-family: Raleway;
+            font-size: 12pt;
+            color: #575757;
+        }
+
+    }
+}

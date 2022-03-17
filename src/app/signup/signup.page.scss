@@ -1,0 +1,32 @@
+.signUpForm {
+    display: grid;
+    padding: 40px;
+    gap: 10px;
+    .title{
+        h2{
+            font-family: Raleway;
+            color: #575757;
+        }
+    }
+    .formContent {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 40px;
+        .fields {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;    
+        }  
+        .buttonSignUp{
+
+            display: flex;
+            justify-content: center;
+    
+            ion-button{
+                --background:#38D15A
+                
+            }          
+    
+        }
+    }
+}
