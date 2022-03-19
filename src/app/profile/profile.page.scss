@@ -1,0 +1,39 @@
+.profileForm {
+    display: grid;
+    padding: 40px;
+    gap: 10px;
+    .title{
+        h2{
+            font-family: Raleway;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+    .formContent {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 40px;
+        .fields {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;   
+
+            ion-input{
+                --color:#707070;
+                --font-style:Raleway
+            }
+            
+        }  
+        .buttonProfile{
+
+            display: flex;
+            justify-content: center;
+    
+            ion-button{
+                --background:#38D15A
+                
+            }          
+    
+        }
+    }
+}
