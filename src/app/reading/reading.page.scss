@@ -2,4 +2,71 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
+    gap: 80px;
+    .containerValues{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .weightReading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .value{
+                font-family: Raleway;
+                
+                h1{
+                    color: #1885FC;
+                    font-size: 40pt;
+                    font-weight: bolder;
+                    label{
+                        font-size: 12pt;
+                        color: #707070;
+                        
+                    }
+                }
+                border-bottom: 2px solid #707070;
+                
+            }
+            .labelMeas {
+                padding-top: 5px;
+            }
+            
+        }
+        .heightReading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .value{
+                font-family: Raleway;
+                h1{
+                    color: #1885FC;
+                    font-size: 40pt;
+                    font-weight: bolder;
+                    label{
+                        font-size: 12pt;
+                        color: #707070;
+                        
+                    }
+                }
+                border-bottom: 2px solid #707070;
+
+            }
+            .labelMeas {
+                padding-top: 5px;
+            }
+        }
+    }
+    .buttonProfile{
+
+        display: flex;
+        justify-content: center;
+
+        ion-button{
+            --background:#38D15A
+            
+        }          
+
+    }
 }

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ReadingPageRoutingModule } from './reading-routing.module';
 
 import { ReadingPage } from './reading.page';
+import { NavheaderComponent } from '../shared/components/navheader/navheader.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { ReadingPage } from './reading.page';
     IonicModule,
     ReadingPageRoutingModule
   ],
-  declarations: [ReadingPage]
+  declarations: [ReadingPage, NavheaderComponent]
 })
 export class ReadingPageModule {}
