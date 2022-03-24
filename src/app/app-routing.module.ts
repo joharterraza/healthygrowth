@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'reading',
     loadChildren: () => import('./reading/reading.module').then( m => m.ReadingPageModule)
+  },  {
+    path: 'recipe',
+    loadChildren: () => import('./recipe/recipe.module').then( m => m.RecipePageModule)
   }
+
   
 ];
 
