@@ -1,12 +1,21 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 15px;
     font-size: 12px;
-
-    .cardRecipes{
+    .cardRecipes {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        ion-card {
+            width: 40vw !important;
+            ion-card-header {
+                ion-card-title {
+                    color: #0070CB;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,12 @@
+.container {
+    padding: 15px;
+    .cardExercises {
+        ion-card {
+            ion-card-header {
+                ion-card-title {
+                    color: #0070CB;
+                }
+            }
+        }
+    }
+}
