@@ -35,8 +35,31 @@
         </div>
     </div>
 </ion-content>
-<ion-footer collapse="fade">
-    <ion-toolbar>
-        <ion-title>Footer</ion-title>
-    </ion-toolbar>
-</ion-footer>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="statistic">
+        <ion-icon style="color: #1885FC;" name="stats-chart-outline"></ion-icon>
+        <ion-label style="color: #1885FC;">Statistics</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile">
+        <ion-icon style="color: #1885FC;" name="person-circle"></ion-icon>
+        <ion-label style="color: #1885FC;">Profile</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="add">
+        <ion-icon style="color: #1885FC;" name="add-circle-outline"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="exercise">
+        <ion-icon style="color: #1885FC;" name="barbell-outline"></ion-icon>
+        <ion-label style="color: #1885FC;">Exercises</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="recipes">
+        <ion-icon style="color: #1885FC;" name="book-outline"></ion-icon>
+        <ion-label style="color: #1885FC;" >Recipes</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
