@@ -8,15 +8,15 @@
         </ion-title>
         <div class="loginEmail">
           <label>Email</label>
-          <input type="text" />
+          <input #username type="text" />
         </div>
         <div class="loginPassword">
           <label>Password</label>
-          <input type="password" />
+          <input #password type="password" />
         </div>
       </div>
       <div class="buttonLogIn_signUp">
-        <ion-button size="large" style="width: 80%">Log in</ion-button>
+        <ion-button size="large" style="width: 80%" (click)="login()">Log in</ion-button>
         <label
           >Don´t have an account?<ion-label color="primary">
             <a href="#">Sign up</a></ion-label
