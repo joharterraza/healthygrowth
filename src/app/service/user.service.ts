@@ -8,6 +8,7 @@ import { environment } from '../../environments/environment'; //read environmant
 export class UserService {
   
   private loginAPI = environment.apiUrl + 'users/login';
+  private statsAPI = environment.apiUrl + 'users/';
   constructor(private httpClient : HttpClient) { 
     console.log(this.httpClient)
   }
@@ -15,5 +16,9 @@ export class UserService {
 
   login(params){
     return this.httpClient.post(this.loginAPI, params).toPromise();
+  }
+
+  getStats(id){
+    return this.httpClient.get(this.statsAPI + id + '/stats').toPromise();
   }
 }

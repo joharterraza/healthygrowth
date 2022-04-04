@@ -69,6 +69,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       border-radius: 5px;
     }
     .healthStatus{
@@ -77,7 +78,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       border-radius: 5px;
+
+      .under, .over {
+        color: #FB9946
+      }
+
+      .normal {
+        color: #17A858
+      }     
+
+      .obesity {
+        color: #E53729
+      }
 
     }
   }

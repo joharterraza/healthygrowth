@@ -28,6 +28,7 @@ export class LoginPage implements OnInit {
     };
     this.userService.login(loginParams)
     .then( (result) => {
+      console.log(result)
       this.saveUser(result)
     } )
     .catch( (error) => {console.log(error); } )
@@ -40,7 +41,7 @@ export class LoginPage implements OnInit {
     console.log(data);
     if(data.data){
       sessionStorage.loggedIn = true;
-      sessionStorage.userInfo = JSON.stringify(data.user);
+      sessionStorage.userInfo = JSON.stringify(data.data);
 
       window.location.href = ''
     }
